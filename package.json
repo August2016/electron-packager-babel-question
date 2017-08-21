@@ -1,0 +1,23 @@
+{
+    "name": "electron-packager-babel-question",
+    "version": "1.0.0",
+    "description": "Shows that electron won't run when the main process is built using Webpack's CommonsChunkPlugin",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron --require babel-register main.js",
+        "package": "electron-packager ."
+    },
+    "devDependencies": {
+        "electron": "~1.6.2"
+    },
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "6.17.x",
+        "babel-polyfill": "6.16.x",
+        "babel-preset-es2015": "6.16.x",
+        "babel-preset-react": "6.16.x",
+        "babel-preset-stage-2": "6.17.x",
+        "babel-register": "6.24.x",
+        "electron-packager": "^8.7.2"
+    }
+}
